@@ -29,6 +29,7 @@ app.get("/", (req, res) => {
 app.listen(process.env.PORT || 5000, function () {
   console.log("Server has started.");
 });
+app.setTimeout(500000);
 
 // app.listen(process.env.PORT, () => {
 //   console.log(`Server is running on port ${process.env.PORT}.`);
