@@ -1,9 +1,7 @@
 exports.getMainPage = (req, res) => {
-
-    if (!error) {
+  if (!error) {
     res.render("index.ejs", { dataFromSpoonacular: recipe });
-
-    } else {
-      console.log(error);
-    }
+  } else {
+    console.log(error);
+  }
 };
